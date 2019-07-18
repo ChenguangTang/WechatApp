@@ -1,0 +1,22 @@
+  <!--pages/index/index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+<view class='flex'>
+<image style="width: 300px; height: 300px; margin:5px;" mode="scaleToFill" src="{{imageSrc}}"></image>
+</view>
+<button class='btn1' open-type='' bindtap="UploadImage">
+<image class='btnImg' src='../../images/file.png'></image>
+    <view>上传照片</view>
+</button>
+<button class='btn2' open-type='' bindtap="TTS">
+<image class='btnImg1' src='../../images/start.png'></image>
+    <view>开始</view>
+</button>
+

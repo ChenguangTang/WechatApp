@@ -1,0 +1,32 @@
+<!--pages/test/test.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+<view >
+  <view class="userinfo">
+    <button  class='btn1' bindtap="TTS">播放第{{count}}个单词</button>
+  </view>
+ 
+</view>
+ 
+<view class='section'>
+  <form bindsubmit='searchBox'>
+     <input class='text' name="in_put" value='{{inputValue}}' />   
+     <button  formType="submit"class='btn3' >确定</button>
+  </form>
+  
+</view>
+ <popup id='popup' 
+      title='单词正确率' 
+      content='你回答的正确率为{{100*rat}}%'
+      btn_no='没有' 
+      btn_ok='学会了'
+      bind:error="_error"  
+      bind:success="_success">
+  </popup>

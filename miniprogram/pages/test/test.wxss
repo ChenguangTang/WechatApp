@@ -1,0 +1,79 @@
+/* pages/test/test.wxss */
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+.btn1 {
+  width: 80%;
+  margin-top: 20rpx;
+  background-color: burlywood;
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.btn1::after {
+  border-radius: 98rpx;
+  border: 0; 
+}
+.section{
+  margin-top:  20px;
+  margin-left: 67px;
+  margin-right: 20px;
+  height: 28px;
+  border: 2px solid rgba(0, 255, 149, 0.459);
+  border-radius: 25px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input{
+ padding-left: 100px;
+ height: 100px; 
+}
+.center{
+    text-align: center;
+    
+}
+.btn2 {
+  width: 50%;
+  margin-top: 10rpx;
+  background-color: burlywood;
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.btn3 {
+  width: 50%;
+  margin-top: 80rpx;
+  background-color: burlywood;
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+ 
+}
